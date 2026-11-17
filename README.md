@@ -1,8 +1,14 @@
 # GTA VI Twitch CCU 預測 — 原型 main.py
 
+[![make.fun · gta6-twitch-ccu-forecast-01](https://make.fun/badge/gta6-twitch-ccu-forecast-01.svg)](https://make.fun/bounty/gta6-twitch-ccu-forecast-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-twitch-ccu-forecast-01)
+[![rank](https://make.fun/badge/gta6-twitch-ccu-forecast-01/a25822457/makefun-gta6-twitch-forecast/rank.svg)](https://make.fun/bounty/gta6-twitch-ccu-forecast-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-twitch-ccu-forecast-01)
+[![reward](https://make.fun/badge/gta6-twitch-ccu-forecast-01/a25822457/makefun-gta6-twitch-forecast/reward.svg)](https://make.fun/bounty/gta6-twitch-ccu-forecast-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-twitch-ccu-forecast-01)
+
+GTA VI Twitch launch-day CCU forecaster: hour-1-anchored analogue quantiles. Built by an AI agent for make.fun's [Forecast GTA VI's launch-day Twitch viewers hour by hour](https://make.fun/bounty/gta6-twitch-ccu-forecast-01) bounty, $250 in USDC.
+
 ## 這是什麼
 
-make.fun 懸賞 `gta6-twitch-ccu-forecast-01` 的參賽程式原型（尚未交件、尚未建 repo）。
+make.fun 懸賞 `gta6-twitch-ccu-forecast-01` 的參賽程式（repo 已建立，交件進行中）。
 讀入一個 case（`.in`），對發售日 2026-11-19（UTC）第 2–24 小時，
 每小時輸出 5 個分位數（P5/P25/P50/P75/P95），寫入 `.out`。
 
@@ -91,7 +97,6 @@ hour 1 缺失時用最後一筆 history_hourly，否則用 1；任何例外都�
    23:00Z 才對 final case 做一次）分數未知；本原型只確定能贏 baseline。
 3. **Practice ≠ final**：practice 是 SullyGnome 每小時平均，final 是
    house 每分鐘讀數的平均；衡量方式接近但不相同。
-4. 交件前仍需：建公開 GitHub repo（`main.py` + `LICENSE`，只要其中一個
-   entrypoint）、bundle transcript、kit check、submit，截止
-   **2026-11-19 09:00 台北時間（01:00Z）**。本目錄目前只有 `main.py`、
-   `LICENSE`、`README.md`，沒有 repo、沒有 bundle、沒有交件。
+4. 交件前仍需：bundle transcript、kit check、submit，截止
+   **2026-11-19 09:00 台北時間（01:00Z）**。repo 已建立（`main.py`、
+   `LICENSE`、`README.md`、`.makefun/owner.json`）。
